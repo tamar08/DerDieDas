@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background1"
+    tools:context=".fragments.GameFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/white"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_germanWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="German"
+                android:textColor="#D11920"
+                android:textSize="40sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tv_englishWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="45dp"
+                android:gravity="center"
+                android:text="translation"
+                android:textColor="#878787"
+                android:textSize="26sp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:id="@+id/ll_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:indeterminate="false"
+                    android:layout_marginLeft="8dp"
+                    android:max="10"
+                    android:minHeight="50dp"
+                    android:progress="0"></ProgressBar>
+
+                <TextView
+                    android:id="@+id/tv_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="0/10"
+                    android:textColor="#7F7F7F"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_der"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/custom_button"
+                android:padding="10dp"
+                android:text="Der"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                app:cardCornerRadius="20dp"></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_die"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/custom_button"
+                android:padding="10dp"
+                android:text="Die"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                app:cardCornerRadius="20dp"></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_das"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/custom_button"
+                android:padding="10dp"
+                android:text="Das"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                app:cardCornerRadius="20dp"></androidx.appcompat.widget.AppCompatButton>
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#D11920"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:cardCornerRadius="20dp"></Button>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
